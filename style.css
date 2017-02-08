@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Chewy|Didact+Gothic|Dekko');
+
 #button-container {
     text-align: center;
 }
 
 h1 {
     text-align: center;
+    font-family: Didact Gothic;
+}
+body {
+  background: url("https://newevolutiondesigns.com/images/freebies/cool-wallpaper-3.jpg");
+  background-size: 1100px 700px;
 }

@@ -5,7 +5,14 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
+      makeRect(0, 0, 30000, 3000, "darkcyan", 1)
+     makeRect(119, 30, 30, 2, "brown", 1)
+      makeRect(51, 30, 30, 2, "brown", 1)
+    makeCircle(100, 30, 20, "white", 1)
+    makeEllipse(100, 10, 12, 10, "white", 1)
+    makeCircle(100, 60, 30, "white", 1)
     
+     
 }
 
 
@@ -13,6 +20,14 @@ function createFirstScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
+      makeRect(0, 0, 30000, 3000, "darkcyan", 1)
+     makeEllipse(75, 59, 10, 4.1, "brown", 1)
+      makeRect(69, 80, 6, 20, "brown", 1)
+      makeRect(39, 80, 6, 20, "brown", 1)
+      makeRect(39, 70, 36, 10, "brown", 1)
+      makeRect(65, 60, 10, 20, "brown", 1)
+    makeRect( 65,55 , 15, 8, "brown", 1)
+    makeCircle(70, 57, 2, "black", 1)
     
 }
 
@@ -21,7 +36,12 @@ function createSecondScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
-    
+    makeRect(0, 0, 30000, 3000, "darkcyan", 1)
+    makeRect(169, 30, 30, 2, "brown", 1)
+      makeRect(101, 30, 30, 2, "brown", 1)
+   makeRect( 130,60 , 40, 10, "white", 1)
+makeEllipse( 150, 57, 25, 15, "PINK", 1)
+
 }
 
 
@@ -32,9 +52,15 @@ function createThirdScene() {
 // This function is called whenever you press the "Go!" button.
 function createRandomScene() {
     // Generate a random number between 0 and 1, and store it in a variable.
-    
+    var myNumber = Math.random()
     // If the number is less than 0.33, call the function to create your first scene.
-    
+    if(myNumber<.33) {
+    createFirstScene()
+    }else if(myNumber<.67) {
+    createSecondScene()
+    }else {
+    createThirdScene()
+    }
     
     
     // Else, if the number is less than 0.67, call the function to create your second scene.
