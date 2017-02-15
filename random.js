@@ -43,6 +43,35 @@ function createThirdScene() {
 makeEllipse( 150, 57, 25, 15, "PINK", 1)
 
 }
+function createFourthScene() {
+      makeRect(0, 0, 30000, 3000, "darkcyan", 1)
+     makeRect(119, 30, 30, 2, "green", 1)
+      makeRect(51, 30, 30, 2, "green", 1)
+    makeCircle(100, 30, 20, "black", 1)
+    makeEllipse(100, 10, 12, 10, "black", 1)
+    makeCircle(100, 60, 30, "black", 1)
+    
+     
+}
+function createFifthScene() {
+      makeRect(0, 0, 30000, 3000, "darkcyan", 1)
+     makeEllipse(75, 59, 10, 4.1, "green", 1)
+      makeRect(69, 80, 6, 20, "green", 1)
+      makeRect(39, 80, 6, 20, "green", 1)
+      makeRect(39, 70, 36, 10, "green", 1)
+      makeRect(65, 60, 10, 20, "green", 1)
+    makeRect( 65,55 , 15, 8, "green", 1)
+    makeCircle(70, 57, 2, "white", 1)
+    
+}
+function createSixthScene() {
+    makeRect(0, 0, 30000, 3000, "darkcyan", 1)
+    makeRect(169, 30, 30, 2, "green", 1)
+      makeRect(101, 30, 30, 2, "green", 1)
+   makeRect( 130,60 , 40, 10, "black", 1)
+makeEllipse( 150, 57, 25, 15, "red", 1)
+
+}
 
 
 
@@ -54,13 +83,21 @@ function createRandomScene() {
     // Generate a random number between 0 and 1, and store it in a variable.
     var myNumber = Math.random()
     // If the number is less than 0.33, call the function to create your first scene.
-    if(myNumber<.33) {
+    if(myNumber<.16) {
     createFirstScene()
-    }else if(myNumber<.67) {
+    }else if(myNumber<.32) {
     createSecondScene()
-    }else {
+    }else if(myNumber<.58) {
     createThirdScene()
+    }else if(myNumber<.74) {
+    createFourthScene()
+    }else if(myNumber<.94) {
+    createFifthScene()
+    }else {
+    createSixthScene()
     }
+    
+    
     
     
     // Else, if the number is less than 0.67, call the function to create your second scene.
